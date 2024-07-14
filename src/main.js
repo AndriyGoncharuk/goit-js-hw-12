@@ -61,10 +61,12 @@ loadMoreBtn.addEventListener('click', async () => {
             loadMoreBtn.classList.remove('is-hidden');
         }
 
+        // window.scrollBy(0, window.innerHeight);
+
         const galleryItem = document.querySelector('.gallery-item');
         const cardHeight = galleryItem.getBoundingClientRect().height;
+        window.scrollBy({top: cardHeight * 4, behavior: 'smooth' });
         console.log(cardHeight);
-        window.scrollBy({ top: cardHeight * 4, behavior: 'smooth' });
 
     } catch (error) {
         iziToast.error({ title: 'Error', message: 'Something went wrong. Please try again.' });

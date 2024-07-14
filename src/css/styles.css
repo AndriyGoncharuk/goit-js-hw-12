@@ -97,14 +97,15 @@ header {
 }
 
 .gallery-item img {
-  width: 100%;
-  height: auto;
+  width: 360px;
+  height: 200px;
   border-bottom: 1px solid #ccc;
 }
 
 .info {
   display: flex;
   gap: 30px;
+  
 }
 
 p {
